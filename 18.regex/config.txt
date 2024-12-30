@@ -1,0 +1,14 @@
+[edit interfaces ge-0/0/0]
+user@host# show | display set 
+set interfaces ge-0/0/0 unit 0 family inet address 10.0.1.254/24
+
+[edit interfaces ge-0/0/0]
+user@host# show | display set explicit
+set interfaces ge-0/0/0 unit 0 family inet address 10.0.1.254/24
+set interfaces ge-0/0/0 unit 0 family inet
+set interfaces ge-0/0/0 unit 0
+
+[edit interfaces ge-0/0/0]
+user@host# show | display set relative
+set unit 0 family inet address 10.0.1.254/24
+set unit 0 family inet
